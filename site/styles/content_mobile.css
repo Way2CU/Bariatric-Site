@@ -1,0 +1,622 @@
+/**
+ * Main Style Sheet
+ * Optimal-Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+  h1,h2,p {
+ 	margin: 0px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+
+ }
+
+ h2 {
+ 	font-size: 1.5em;
+ }
+
+ p {
+ 	font-size: 1.1em;
+ }
+
+  span.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	background-image: url(../images/header/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 130px 50px;
+	width: 130px;
+	height: 50px;
+}
+
+a.phone {
+	display:block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 100%);
+	border: 1px solid #15a51d;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+	box-shadow: 3px 3px 2px rgba(213, 189, 189, 0.3);
+	border-radius: 8px;
+	position: relative;
+}
+
+a.phone:hover {
+	background:linear-gradient(0deg, rgba(118, 204, 30, 1) 0%,rgba(22, 166, 30, 1) 100%);
+}
+
+a.phone:before {
+	content: "";
+	position: absolute;
+	top:42%;
+	left: 15%;
+	background-image: url(../images/header/icons/icon-phone-white.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+}
+
+a.phone span {
+	display: block;
+	border-bottom: 1px solid  #15a51d;
+	font-size: 0.5em;
+}
+
+.form_wrap {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+    background-color: rgba(33, 82, 116, 0.8);
+}
+
+.form_wrap h2 {
+	display: block;
+	color:white;
+	font-weight: 300;
+}
+
+form {
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+form label {
+	display:block;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+form label input {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 80%;
+}
+
+form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	color: white;
+	width: 15%;
+}
+
+form div.controls {
+	display:block;
+}
+
+form div.controls button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border:1px solid transparent;
+	border-radius:5px;
+	background-color:#75cb1d;
+	color:white;
+	cursor: pointer;
+	transition:all 0.3s;
+}
+
+form div.controls button:hover {
+	background-color:#589B13;
+}
+
+
+
+ header {
+ 	display: block;
+ 	text-align: right;
+ 	background-color:#e0ecf7;
+ 	background-image: url(../images/desktop/mobile-header-background-02.jpg);
+ 	background-repeat: no-repeat;
+ 	background-position: center 150px;
+ 	background-size: 100% auto;
+}
+
+ header > div:first-of-type {
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: white;
+	height: 60px;
+	z-index: 1000;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+header div a {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	margin-top: -17.5px;
+	left: 15px;
+	background-image: url(../images/header/icons/icon-phone-green.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 35px 35px;
+	width: 35px;
+	height: 35px;
+
+}
+
+header article {
+	display: block;
+	padding-top: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+header article h1 {
+	display: block;
+	font-size: 1.8em;
+	padding-bottom: 0px;
+}
+
+header article h2 {
+	display: block;
+	padding-top: 0px;
+
+}
+
+header article p {
+	display: block;
+	padding-top: 0px;
+}
+
+header article p strong {
+	display: block;
+}
+
+header a.youtube {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(../images/header/icons/icon-youtube.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60px 40px;
+	width: 140px;
+	height: 100px;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+header a.youtube:hover {
+	background-color: white;
+}
+
+header a.youtube span {
+	display: inline-block;
+	padding-top: 70px;
+	color:#1c4566;
+}
+
+div.wrap {
+	display: block;
+	background-color: white;
+	background-image: url(../images/desktop/mobile-explanation-01.jpg);
+	background-repeat: no-repeat;
+	background-position: center 1000px;
+	background-size: 100% auto;
+	position: relative;
+}
+
+div.wrap span {
+	display:block;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	color:#ff0000;
+	font-weight: bold;
+	font-size: 0.8em;
+
+}
+
+div.wrap div.about_article {
+	display: block;
+	text-align: right;
+
+}
+
+ div.about_article h2:first-of-type {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: right;
+	font-weight: 400;
+}
+
+div.about_article h2:last-of-type {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color:  #a69d74;
+	color:white;
+}
+
+ div.about_article > p {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ div.about_article > p:last-of-type {
+	padding-left: 15px;
+	padding-right: 15px;
+ 	background-color:  #a69d74;
+ 	color:white;
+ }
+
+ div.about_article p:nth-of-type(2) {
+	color:rgb(1, 159, 227);
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ div.about_article ul {
+	margin: 0px;
+	padding: 0px 15px;
+	list-style-type: none;
+	margin-bottom: 360px;
+}
+
+ div.about_article ul li {
+	display: block;
+	position: relative;
+	padding-right: 30px;
+}
+div.about_article ul li:nth-child(n+5) {
+	background-image: url(../images/about/checkmark.svg);
+	background-repeat: no-repeat;
+	background-position: right 10px;
+	background-size: 25px 25px;
+}
+
+div.about_article ul li:nth-child(-n+4):before {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-image: url(../images/about/icons.svg);
+	background-repeat: no-repeat;
+	background-position: -75px 10px;
+	background-size: 100px 25px;
+	width: 25px;
+	height: 50px;
+}
+
+div.about_article ul li:nth-of-type(2):before {
+	background-position: -0px 10px;
+}
+
+div.about_article ul li:nth-of-type(3):before {
+    background-position: -25px 10px;
+}
+
+div.about_article ul li:nth-of-type(4):before {
+	background-position: -50px 10px;
+}
+
+div.about_article ul li:nth-of-type(5) {
+	background-position: right 40px;
+	padding-top: 30px;
+}
+
+div.about_article ul li:last-of-type {
+	font-size: 1.2em;
+}
+
+div.about_article ul li:last-of-type strong {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.5em;
+}
+
+/*Benefits Section*/
+
+div.white div.animation {
+	display:block;
+	background-image: url(../images/benefits/woman.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 300px 289px;
+	width:100%;
+	height: 289px;
+	position: relative;
+	opacity: 1;
+}
+
+div.white div.animation:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(../images/benefits/man.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 300px 289px;
+	width:100%;
+	height: 289px;
+	opacity: 0;
+	-webkit-animation: animateImage 6s infinite;
+	-webkit-animation-direction: alternate;
+
+	-o-animation: animateImage 6s infinite;
+	-o-animation-direction: alternate;
+
+	-moz-animation: animateImage 6s infinite;
+	-moz-animation-direction: alternate;
+
+    animation: animateImage 6s infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animateImage {
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes animateImage {
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-o-keyframes animateImage {
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes animateImage {
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+div.white > h2 {
+	display: block;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.white span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width:calc(50% - 40px);
+	position: relative;
+	color: #1472a4;
+	font-size: 0.8em;
+}
+
+div.white span:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -77px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 99.75px;
+	border: 2px solid #1472a4;
+	width: 150px;
+	height: 99.75px
+}
+
+div.white span:nth-of-type(1):before {
+	background-image: url(../images/benefits/without-surgery.jpg);
+}
+
+div.white span:nth-of-type(2):before {
+	background-image: url(../images/benefits/sense-of-satiety.jpg);
+}
+
+div.white span:nth-of-type(3):before {
+	background-image: url(../images/benefits/more-effective.jpg);
+}
+
+div.white span:nth-of-type(4):before {
+	background-image: url(../images/benefits/less-risky.jpg);
+}
+
+div.benefits1_article {
+	display:block;
+	text-align: right;
+}
+
+div.benefits1_article h2 {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div.benefits1_article ol {
+	margin: 0px 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+div.benefits1_article ol li {
+	font-size: 1.1em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+div.benefits1_article ol li ul li {
+	font-size: 1em;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+div.benefits1_article ol ul {
+	list-style-type: disc;
+}
+
+/*Video Section*/
+div.blue  {
+	display: block;
+	text-align: right;
+	background-color:#1c4566;
+}
+
+div.blue h2 {
+	display: block;
+	text-align: center;
+	color:white;
+}
+
+div.blue div.video_article {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+	color:white;
+}
+
+div.blue div.video_article p {
+	display: block;
+}
+
+div.blue div.youtube {
+	display:block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+div.blue div.youtube iframe {
+	width: 300px;
+	height: 240px;
+}
+
+/*BOTTOM SECTION*/
+
+div.bottom {
+	display: block;
+	background-color: #e5e7eb;
+	background-image: url(../images/desktop/mobile-footer-background-02.jpg);
+	background-repeat: no-repeat;
+	background-position: center 450px;
+	background-size: 100% auto;
+	position: relative;
+}
+
+div.bottom .form_wrap {
+	margin-top:290px;
+
+}
+
+div.bottom_article {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.bottom_article p:last-of-type {
+	display: block;
+	font-size: 0.8em;
+	color:red;
+	font-weight: bold;
+}
+
+/*FOOTER*/
+
+footer {
+	display: block;
+	background-color: #212121;
+	text-align: center;
+}
+
+footer span {
+	display: inline-block;
+	vertical-align: middle;
+	direction: ltr;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	background-image: url(../images/footer/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	width: 270px;
+	color: white;
+	text-align: left;
+}
+footer span a {
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+
+footer span a {
+	padding-left: 5px;
+	color:#449bb5;
+}
+
+div.dialog div.title {
+	text-align: center;
+}
+
+.inner_content {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+header.thankyou {
+	min-height: 555px;
+}
+

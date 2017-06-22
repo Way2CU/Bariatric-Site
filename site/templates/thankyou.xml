@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control,animation_chain"/>
+			<cms:module name="head_tag" action="print_tag"/>
+			<cms:raw file="parts/fbrmrk.txt"/>
+			<cms:raw file="parts/fbcp.txt"/>
+		</head>
+
+		<body>
+			<cms:raw file="parts/gtm.txt"/>
+			<header class="thankyou">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="thankyou"
+					/>
+			</header>
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
+		</body>
+	</html>
+</document>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<frontask>
+<request>
+    <auth>
+        <systemid>9e176256-a49f-4620-8cd8-ea4a00fd136d</systemid>
+    </auth>
+    <action>
+        <type>webtolead</type>
+        <processdefinitionstepid>PPe0fd0c4b_2ca1_4cdb_b6d0_c936828937b9</processdefinitionstepid>
+    </action>
+    <data>
+        <contactdetails>
+            <firstname>%name%</firstname>
+            <mobilephone>%phone%</mobilephone> <!-- לרשום טלפון-->
+            <email>%email%</email>
+            <accountname>%source%</accountname> <!-- להזין האם בא מפייסבוק או מגוגל -->
+            <address></address>
+            <contacttypes><typeid>PM80f8dab1_0cc2_495f_9ce3_d9b073f56975</typeid></contacttypes>
+            <extrainfo>
+<CNA77851F2_C4A6_46BC_A62A_CFD4DA96E667>%source%</CNA77851F2_C4A6_46BC_A62A_CFD4DA96E667> <!-- אופן הפניה. זה צריך להיות כמו מה שמופיע בשם החברה-->
+</extrainfo>
+        </contactdetails>
+        <remarks></remarks>
+        <mailinglist></mailinglist> <!-- 0 = false, 1 = true -->
+        <updatedetails></updatedetails> <!-- 0 = false, 1 = true -->
+        <processdata><stepnotes></stepnotes>
+        <extrainfo>
+<CNcd88b8ba_5470_494c_bffa_d9b6f1cd8421>%source%</CNcd88b8ba_5470_494c_bffa_d9b6f1cd8421> <!-- מקור ההגעה --> <!-- כאן יש להזין את מקור הreferal-->
+</extrainfo>
+        </processdata>
+    </data>
+</request>
+</frontask>

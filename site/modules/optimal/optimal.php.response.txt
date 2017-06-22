@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+Set-Cookie: ASP.NET_SessionId=tzdbq4y5fua5gufysexq0moo; path=/; HttpOnly
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 09 Jun 2017 13:37:11 GMT
+Connection: close
+Content-Length: 8830
+
+<frontask><response><statuscode>0</statuscode><description>הפניה נוצרה בהצלחה</description></response></frontask>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>דף קבלת פניות</title>
+    <link rel="stylesheet" type="text/css" href="http://www.bewise.co.il/css/template.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.bewise.co.il/css/textStyle.css" />
+        <link href="~/Styles/Styles.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.inputStyleRemarks
+{
+	width: 358px;
+	height: 75px;
+	border

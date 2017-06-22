@@ -3,7 +3,7 @@
 <document>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
-			<title>בלון קיבה ספאץ לסובלים מהשמנת יתר</title>
+			<title><cms:text constant="site_title"/></title>
 			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 			<cms:raw file="parts/fbrmrk.txt"/>
@@ -50,7 +50,7 @@
 					<cms:module
 						name="youtube"
 						action="show_list"
-						text_id="optimal_video_2"
+						text_id="optimal_video"
 						template="parts/video.xml"
 						/>
 				</cms:desktop>
@@ -59,8 +59,8 @@
 					<!-- youtube dialog -->
 					<cms:module
 						name="youtube"
-						action="show"
-						text_id="optimal_video_2"
+						action="show_list"
+						text_id="optimal_video"
 						template="parts/video.xml"
 						/>
 					<a

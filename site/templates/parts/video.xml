@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<cms:desktop>
+		<a
+			class="youtube"
+			href="url_Make('view', 'dialog_video', array('id', $params['id']))"
+			title="$params['title'][$language]"
+			cms:eval="href,title"
+			>
+			<span><cms:text constant="video_title"/></span>
+		</a>
+	</cms:desktop>
+
+	<cms:mobile>
+		<a
+			class="youtube mobile"
+			href="'http://www.youtube.com/watch?v='.$params['video_id']"
+			title="$params['title'][$language]"
+			cms:eval="href,title"
+			>
+			<span><cms:text constant="video_title"/></span>
+		</a>
+	</cms:mobile>
+</document>

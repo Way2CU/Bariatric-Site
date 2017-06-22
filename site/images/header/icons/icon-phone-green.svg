@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 33.36 33.36" style="enable-background:new 0 0 33.36 33.36;" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="16.6801" y1="-399.381" x2="16.6801" y2="-366.4598" gradientTransform="matrix(1 0 0 -1 0 -366.2403)">
+		<stop  offset="0" style="stop-color:#43813D"/>
+		<stop  offset="0.3" style="stop-color:#5BA545"/>
+		<stop  offset="0.3773" style="stop-color:#63B046"/>
+		<stop  offset="0.5517" style="stop-color:#70BE44"/>
+		<stop  offset="0.7464" style="stop-color:#7AC144"/>
+		<stop  offset="1" style="stop-color:#7BC043"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_1_);" d="M16.68,33.141c-9.086,0-16.461-7.374-16.461-16.461c0-9.086,7.374-16.461,16.461-16.461
+		S33.141,7.594,33.141,16.68C33.141,25.766,25.766,33.141,16.68,33.141z"/>
+	<path style="fill:#7BC043;" d="M16.68,0.439c8.955,0,16.241,7.287,16.241,16.241c0,8.955-7.287,16.241-16.241,16.241
+		S0.439,25.635,0.439,16.68C0.439,7.726,7.726,0.439,16.68,0.439 M16.68,0C7.462,0,0,7.462,0,16.68c0,9.218,7.462,16.68,16.68,16.68
+		s16.68-7.462,16.68-16.68C33.36,7.462,25.898,0,16.68,0L16.68,0z"/>
+</g>
+<path style="fill:#FFFFFF;" d="M20.982,26.556c-1.361-0.088-10.403-2.283-14.178-12.993c-0.79-2.239,0.176-5.882,2.765-6.672
+	c2.59-0.834,3.951,2.809,4.302,5.092l-2.283,2.283c0,0-0.044,1.405,3.029,4.521c3.117,3.117,4.521,3.029,4.521,3.029l2.634-2.634
+	c1.668,0.351,5.004,2.458,5.004,2.458C26.425,24.845,24.274,26.908,20.982,26.556z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="16.6801" y1="-385.0651" x2="16.6801" y2="-366.6781" gradientTransform="matrix(1 0 0 -1 0 -366.2403)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</linearGradient>
+<path style="opacity:0.5;fill:url(#SVGID_2_);enable-background:new    ;" d="M0.483,15.539c3.907,1.975,9.701,3.248,16.197,3.248
+	s12.291-1.273,16.197-3.248c-0.571-8.428-7.594-15.1-16.197-15.1S1.053,7.111,0.483,15.539z"/>
+</svg>

@@ -1,0 +1,101 @@
+/**
+ * Main Style Sheet
+ * Optimal-Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ header {
+ 	display: block;
+ 	text-align: right;
+ 	padding:0px calc((100vw - 1200px) / 2);
+ 	background-image: url(../images/header/header-background.jpg);
+ 	background-repeat: no-repeat;
+ 	background-position: center center;
+ 	min-height: 670px;
+ 	position: relative;
+ }
+
+header div {
+	display: block;
+	position: relative;
+}
+
+header div a {
+	position: absolute;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 65px;
+	padding-right: 30px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../images/header/icons/icon-phone-green.svg);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	background-size: 35px 35px;
+	text-decoration: none;
+	font-size: 2.2em;
+	font-weight: bold;
+	color: #76cc1e;
+
+}
+
+header article {
+	display: block;
+	width: 50%;
+}
+
+header article h1 {
+	display: block;
+	width: 465px;
+	font-size: 3em;
+}
+
+header article h2 {
+	display: block;
+
+}
+
+header article p {
+	display: block;
+	font-size: 1.4em;
+	width: 400px;
+}
+
+header article p strong {
+	display: block;
+}
+
+header a.youtube {
+	display: block;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -70px;
+  	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(../images/header/icons/icon-youtube.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 80px 60px;
+	width: 180px;
+	height: 140px;
+	text-decoration: none;
+	transition:all 0.3s;
+}
+
+header a.youtube:hover {
+	background-color: white;
+}
+
+header a.youtube span {
+	display: inline-block;
+	padding-top: 100px;
+	color:#1c4566;
+}
+
+
+
+
