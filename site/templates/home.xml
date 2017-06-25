@@ -11,25 +11,37 @@
 
 		<body>
 			<cms:raw file="parts/gtm.txt"/>
-			<header>
+			<!-- Language Menu -->
+			<cms:desktop>
+				<div class="language">
+					<cms:module name="language_menu" action="print"/>
+				</div>
+			</cms:desktop>
 
+			<header>
 				<div>
 					<cms:desktop>
 						<a
-							href="'tel:'.urlencode(Language::getText('phone'))"
+							href="'tel:'.urlencode(Language::get_text('phone'))"
 							cms:eval="href"
 							>
 							<cms:text constant="phone"/>
 						</a>
 					</cms:desktop>
 					<cms:mobile>
+					<!-- Language Menu -->
+						<div class="language">
+							<cms:module name="language_menu" action="print"/>
+						</div>
+
+						<span class="logo"></span>
 						<a
-							href="'tel:'.urlencode(Language::getText('phone'))"
+							href="'tel:'.urlencode(Language::get_text('phone'))"
 							cms:eval="href"
+							class="phone-header"
 							>
 						</a>
 					</cms:mobile>
-					<span class="logo"></span>
 				</div>
 
 				<cms:module
@@ -39,7 +51,7 @@
 					/>
 				<cms:desktop>
 					<a
-						href="'tel:'.urlencode(Language::getText('phone'))"
+						href="'tel:'.urlencode(Language::get_text('phone'))"
 						cms:eval="href"
 						class="phone"
 						>
@@ -64,7 +76,7 @@
 						template="parts/video.xml"
 						/>
 					<a
-						href="'tel:'.urlencode(Language::getText('phone'))"
+						href="'tel:'.urlencode(Language::get_text('phone'))"
 						cms:eval="href"
 						class="phone"
 						>
@@ -147,7 +159,7 @@
 					template="parts/article.xml"
 					/>
 				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
+					href="'tel:'.urlencode(Language::get_text('phone'))"
 					cms:eval="href"
 					class="phone"
 					>
