@@ -140,7 +140,6 @@
 						name="youtube"
 						action="show"
 						text_id="optimal_video"
-						cms:eval="id"
 						embed="1"
 						width="500"
 						height="312"
