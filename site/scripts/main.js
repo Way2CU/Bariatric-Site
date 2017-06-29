@@ -45,12 +45,7 @@ Site.is_mobile = function() {
 	return result;
 };
 
-/**
- * Function called when document and images have been completely loaded.
- */
-
- function dialog() {
-
+function dialog() {
 	// calling the dialog.
 	var video_dialog = new Dialog();
 
@@ -70,27 +65,29 @@ Site.is_mobile = function() {
 	});
 }
 
+/**
+ * Function called when document and images have been completely loaded.
+ */
 Site.on_load = function() {
+	if (!Site.is_mobile())
+		dialog();
 
-	if (!Site.is_mobile()){
-	dialog();
-	}
-	
 	$('form').on('dialog-show', function() {
-	$('form').hide();
-	$('div.send').hide();
-	var thankyou = "/thankyou" + window.location.search;
-	// handle analytics event
-	$('form').on('analytics-event', function(event, data) {
-		if (!data.error)
-			dataLayer.push({
-            	'event':'leadSent'
-            });
-		window.location.replace(thankyou);
+		$('form').hide();
+		$('div.send').hide();
+		var thankyou = "/thankyou" + window.location.search;
+
+		// handle analytics event
+		$('form').on('analytics-event', function(event, data) {
+			if (!data.error)
+				dataLayer.push({
+					'event':'leadSent'
+				});
+			window.location.replace(thankyou);
+		});
+		return false;
 	});
-	return false;
-});
-	
+
 };
 
 

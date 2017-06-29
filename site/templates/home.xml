@@ -3,7 +3,7 @@
 <document>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
-			<title>בלון קיבה ספאץ לסובלים מהשמנת יתר</title>
+			<title><cms:text constant="site_title"/></title>
 			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 			<cms:raw file="parts/fbrmrk.txt"/>
@@ -28,8 +28,9 @@
 							<cms:text constant="phone"/>
 						</a>
 					</cms:desktop>
+
 					<cms:mobile>
-					<!-- Language Menu -->
+						<!-- Language Menu -->
 						<div class="language">
 							<cms:module name="language_menu" action="print"/>
 						</div>
@@ -49,6 +50,7 @@
 					action="show"
 					text_id="header_article"
 					/>
+
 				<cms:desktop>
 					<a
 						href="'tel:'.urlencode(Language::get_text('phone'))"
