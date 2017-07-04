@@ -4,7 +4,7 @@
 	<cms:desktop>
 		<a
 			class="youtube"
-			href="URL:make('view', 'dialog_video', array('id', $params['id']))"
+			href="URL::make('view', 'dialog_video', array('id', $params['id']))"
 			title="$params['title'][$language]"
 			cms:eval="href,title"
 			>
