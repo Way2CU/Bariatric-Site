@@ -46,12 +46,13 @@ Site.is_mobile = function() {
 };
 
 // Handle dialog properties
-handle_dialog_youtube = function(event){
+function handle_dialog_youtube(event){
 	event.preventDefault();
-	Site.video_dialog.setTitle(language_handler.getText(null, 'dialog_video_title'));
-			Site.video_dialog.setContentFromURL($(this).attr('href'));
-			Site.video_dialog.add_class('youtube_dialog');
-			Site.video_dialog.showWhenReady();
+	Site.video_dialog
+		.set_title(language_handler.getText(null, 'dialog_video_title'))
+		.set_content_from_url($(this).attr('href'))
+		.set_size(600, -1)
+		.open_when_ready();
 };
 
 /**
@@ -80,7 +81,7 @@ Site.on_load = function() {
 		});
 		return false;
 	});
-});
+};
 
 // connect document `load` event with handler function
 $(Site.on_load);
