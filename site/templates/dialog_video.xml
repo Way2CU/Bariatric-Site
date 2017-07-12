@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<cms:module
-		name="youtube"
-		action="show"
-		text_id="optimal_video_2"
-		cms:eval="id"
-		embed="1"
-		width="640"
-		height="400"
-		player_id="video_player"
-		theme="light"
-		autohide="0"
-		show_related="0"
-		/>
+	<cms:desktop>
+		<cms:module
+			name="youtube"
+			action="show"
+			text_id="optimal_video_2"
+			cms:eval="id"
+			embed="1"
+			width="400"
+			height="400"
+			player_id="video_player"
+			theme="light"
+			autohide="0"
+			show_related="0"
+			/>
+	</cms:desktop>
+	<cms:mobile>
+		<cms:module
+			name="youtube"
+			action="show"
+			text_id="optimal_video_2"
+			cms:eval="id"
+			embed="1"
+			width="300"
+			height="400"
+			player_id="video_player"
+			theme="light"
+			autohide="0"
+			show_related="0"
+			/>
+	</cms:mobile>
 </document>

@@ -61,22 +61,22 @@
 						<cms:text constant="phone"/>
 					</a>
 					<!-- youtube dialog -->
-					<cms:module
-						name="youtube"
-						action="show_list"
-						text_id="optimal_video_2"
-						template="parts/video.xml"
-						/>
+					<a href="URL::make(array(), 'dialog_video.xml')"
+						cms:eval="href"
+						class="youtube"
+						>
+						<span><cms:text constant="video_title"/></span>
+					</a>
 				</cms:desktop>
 
 				<cms:mobile>
 					<!-- youtube dialog -->
-					<cms:module
-						name="youtube"
-						action="show"
-						text_id="optimal_video_2"
-						template="parts/video.xml"
-						/>
+					<a href="URL::make(array(), 'dialog_video.xml')"
+						cms:eval="href"
+						class="youtube"
+						>
+						<span><cms:text constant="video_title"/></span>
+					</a>
 					<a
 						href="'tel:'.urlencode(Language::get_text('phone'))"
 						cms:eval="href"
