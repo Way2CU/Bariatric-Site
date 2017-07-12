@@ -640,3 +640,11 @@ div.language a:hover {
 }
 
 
+//Video dialogs
+div.dialog.youtube_dialog {
+	max-width: none;
+}
+
+div.dialog.visible.active div.content div.inner_content	iframe {
+		width: 100%;
+	}

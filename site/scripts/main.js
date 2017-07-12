@@ -45,37 +45,29 @@ Site.is_mobile = function() {
 	return result;
 };
 
+// Handle dialog properties
+handle_dialog_youtube = function(event){
+	event.preventDefault();
+	Site.video_dialog.setTitle(language_handler.getText(null, 'dialog_video_title'));
+			Site.video_dialog.setContentFromURL($(this).attr('href'));
+			Site.video_dialog.add_class('youtube_dialog');
+			Site.video_dialog.showWhenReady();
+}
+
+
 /**
  * Function called when document and images have been completely loaded.
  */
-
- function dialog() {
-
-	// calling the dialog.
-	var video_dialog = new Dialog();
-
-	//Modefy the dialog.
-
-	video_dialog.setTitle(language_handler.getText(null, 'dialog_video_title'));
-	video_dialog.setSize(640, 330);
-
-	$('a.youtube').not('.mobile').click(function(event) {
-
-		// prevent link from working.
-		event.preventDefault();
-
-		// set content from URL and show it.
-		video_dialog.setContentFromURL($(this).attr('href'));
-		video_dialog.showWhenReady();
-	});
-}
-
 Site.on_load = function() {
 
-	if (!Site.is_mobile()){
-	dialog();
-	}
-	
+	// Create New caracal dialog object
+	Site.video_dialog =  new Caracal.Dialog();
+
+	// Capture link with class youtube and attach click event
+	Site.youtube_link = document.querySelector('a.youtube');
+	Site.youtube_link.addEventListener('click',handle_dialog_youtube);
+
+
 	$('form').on('dialog-show', function() {
 	$('form').hide();
 	$('div.send').hide();
@@ -90,7 +82,7 @@ Site.on_load = function() {
 	});
 	return false;
 });
-	
+
 };
 
 
