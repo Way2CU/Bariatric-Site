@@ -52,7 +52,7 @@ handle_dialog_youtube = function(event){
 			Site.video_dialog.setContentFromURL($(this).attr('href'));
 			Site.video_dialog.add_class('youtube_dialog');
 			Site.video_dialog.showWhenReady();
-}
+};
 
 /**
  * Function called when document and images have been completely loaded.
