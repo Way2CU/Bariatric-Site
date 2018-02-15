@@ -71,8 +71,7 @@
 
 				<cms:mobile>
 					<!-- youtube dialog -->
-					<a href="URL::make(array(), 'dialog_video.xml')"
-						cms:eval="href"
+					<a href="https://youtu.be/FXSgWIeRKas"
 						class="youtube"
 						>
 						<span><cms:text constant="video_title"/></span>

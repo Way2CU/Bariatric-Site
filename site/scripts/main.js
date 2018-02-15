@@ -62,9 +62,11 @@ Site.on_load = function() {
 	// Create New caracal dialog object
 	Site.video_dialog =  new Caracal.Dialog();
 
-	// Capture link with class youtube and attach click event
-	Site.youtube_link = document.querySelector('a.youtube');
-	Site.youtube_link.addEventListener('click',handle_dialog_youtube);
+	if(!Site.is_mobile()) {
+		// Capture link with class youtube and attach click event
+		Site.youtube_link = document.querySelector('a.youtube');
+		Site.youtube_link.addEventListener('click',handle_dialog_youtube);
+	}
 
 	$('form').on('dialog-show', function() {
 		$('form').hide();
